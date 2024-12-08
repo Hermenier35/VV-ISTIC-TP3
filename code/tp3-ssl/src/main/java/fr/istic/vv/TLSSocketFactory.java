@@ -1,6 +1,8 @@
 package fr.istic.vv;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class TLSSocketFactory {
@@ -8,7 +10,7 @@ public class TLSSocketFactory {
 
     public void prepareSocket(SSLSocket socket) {
 
-        String[] supported = socket.getSupportedProtocols();
+       String[] supported = socket.getSupportedProtocols();
         String[] enabled = socket.getEnabledProtocols();
 
 
@@ -17,6 +19,7 @@ public class TLSSocketFactory {
             // Append the preferred protocols in descending order of preference
             // but only do so if the protocols are supported
             TLSProtocol[] values = TLSProtocol.values();
+            List.of(values).forEach(value -> System.out.println(value.getProtocolName()));
             for (int i = 0; i < values.length; i++) {
                 final String pname = values[i].getProtocolName();
                 if (existsIn(pname, supported)) {

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>StringUtils.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package fr.istic.vv;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class StringUtils {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>    private StringUtils() {}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static boolean isBalanced(String str) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_8'/>
+8
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_8'>2</a>
+<span>
+
+1. isBalanced : negated conditional &rarr; KILLED<br/>
+
+2. isBalanced : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if(str == null || str.isEmpty())</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_9'/>
+9
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_9'>1</a>
+<span>
+
+1. isBalanced : replaced boolean return with false for fr/istic/vv/StringUtils::isBalanced &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String symbols = &#34;{}[]()&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String symbolsFound = &#34;&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_13'/>
+13
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_13'>3</a>
+<span>
+
+1. isBalanced : changed conditional boundary &rarr; KILLED<br/>
+
+2. isBalanced : Changed increment from 1 to -1 &rarr; KILLED<br/>
+
+3. isBalanced : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        for(int i = 0; i &#60; str.length(); i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            char ch = str.charAt(i);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            int indexSymbol = symbols.indexOf(ch);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_16'/>
+16
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_16'>1</a>
+<span>
+
+1. isBalanced : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            //v&#233;rifie si mon caract&#232;re est un symbole</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            if(indexSymbol != -1) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_18'/>
+18
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_18'>3</a>
+<span>
+
+1. isBalanced : Replaced integer modulus with multiplication &rarr; KILLED<br/>
+
+2. isBalanced : negated conditional &rarr; KILLED<br/>
+
+3. isBalanced : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                //si on commence par une fermeture, sans ouverture;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_19'/>
+19
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_19'>1</a>
+<span>
+
+1. isBalanced : replaced boolean return with true for fr/istic/vv/StringUtils::isBalanced &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                if (symbolsFound.isEmpty() &#38;&#38; symbols.indexOf(ch) % 2 == 1)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                //si on a au moins une ouverture d&#39;enregistrer et</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                // que le caratere est un symbole fermant</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_23'/>
+23
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_23'>4</a>
+<span>
+
+1. isBalanced : Replaced integer modulus with multiplication &rarr; KILLED<br/>
+
+2. isBalanced : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+3. isBalanced : negated conditional &rarr; KILLED<br/>
+
+4. isBalanced : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                // mais qui ne correspond pas</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_24'/>
+24
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_24'>2</a>
+<span>
+
+1. isBalanced : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+2. isBalanced : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                if (!symbolsFound.isEmpty() &#38;&#38; indexSymbol % 2 == 1 &#38;&#38;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_25'/>
+25
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_25'>1</a>
+<span>
+
+1. isBalanced : replaced boolean return with true for fr/istic/vv/StringUtils::isBalanced &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                        symbols.charAt(indexSymbol - 1) != symbolsFound.charAt(symbolsFound.length()-1))</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_27'/>
+27
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_27'>2</a>
+<span>
+
+1. isBalanced : Replaced integer modulus with multiplication &rarr; KILLED<br/>
+
+2. isBalanced : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                //si balise ouvrante on ajoute a symbolsFound</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                if(indexSymbol % 2 == 0)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    symbolsFound = symbolsFound + ch;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_30'/>
+30
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_30'>2</a>
+<span>
+
+1. isBalanced : Replaced integer modulus with multiplication &rarr; KILLED<br/>
+
+2. isBalanced : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                //si balise fermante et match avec le symbol attendu dans symbolsFound alors on le supprime.</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_31'/>
+31
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_31'>1</a>
+<span>
+
+1. isBalanced : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                if(indexSymbol % 2 == 1)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    symbolsFound = symbolsFound.substring(0, symbolsFound.length()-1);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_35'/>
+35
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_35'>2</a>
+<span>
+
+1. isBalanced : replaced boolean return with false for fr/istic/vv/StringUtils::isBalanced &rarr; KILLED<br/>
+
+2. isBalanced : replaced boolean return with true for fr/istic/vv/StringUtils::isBalanced &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        return symbolsFound.isEmpty();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e6ec74_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e6ec74_8'>8</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_8'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailsimpleBadStart()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailsimpleBadStart()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e6ec74_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testEmptyString()]</span></span> replaced boolean return with false for fr/istic/vv/StringUtils::isBalanced &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e6ec74_13'>13</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_13'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleBrace()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleBrace()]</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailsimpleBadStart()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e6ec74_16'>16</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_16'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailsimpleBadStart()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e6ec74_18'>18</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_18'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailsimpleBadStart()]</span></span> Replaced integer modulus with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailsimpleBadStart()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailsimpleBadStart()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e6ec74_19'>19</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_19'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailsimpleBadStart()]</span></span> replaced boolean return with true for fr/istic/vv/StringUtils::isBalanced &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e6ec74_23'>23</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_23'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailNoMatchBracket2()]</span></span> Replaced integer modulus with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleBrace()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailNoMatchBracket2()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailNoMatchBracket2()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e6ec74_24'>24</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_24'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleBrace()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleBrace()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e6ec74_25'>25</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_25'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailNoMatchBracket2()]</span></span> replaced boolean return with true for fr/istic/vv/StringUtils::isBalanced &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e6ec74_27'>27</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_27'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleSquareBracket()]</span></span> Replaced integer modulus with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleBrace()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e6ec74_30'>30</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_30'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleBrace()]</span></span> Replaced integer modulus with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleBrace()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e6ec74_31'>31</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_31'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleBrace()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e6ec74_35'>35</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e6ec74_35'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleBrace()]</span></span> replaced boolean return with false for fr/istic/vv/StringUtils::isBalanced &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isBalanced<br/><b>Killed by : </b>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailBadOneMoreOpenBracket()]</span></span> replaced boolean return with true for fr/istic/vv/StringUtils::isBalanced &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+
+<li class='mutator'>MATH_MUTATOR</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+
+<li class='mutator'>NULL_RETURN_VALUES</li>
+
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailBadMiddleCloseBracket()] (5 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailNoMatchBracket2()] (4 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailBadMiddleOpenBracket()] (7 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleBrace()] (2 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailsimpleBadImbrication()] (7 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailNoMatchBracket4()] (17 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailBadOneMoreOpenBracket()] (5 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailsimpleBracket()] (6 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testComplexeBrackets2()] (14 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailBadEndBracket()] (5 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testNullString()] (5 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleRoundBracket()] (5 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailsimpleBracket2()] (6 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailNoMatchBracket1()] (6 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleSquareBracket()] (3 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailBadOneMoreCloseBracket()] (5 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testComplexeBrackets1()] (16 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailsimpleBadStart()] (4 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testSimpleMultipleImbrication()] (4 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testComplexeBrackets3()] (5 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testFailNoMatchBracket3()] (4 ms)</li><li>fr.istic.vv.StringUtilsTest.[engine:junit-jupiter]/[class:fr.istic.vv.StringUtilsTest]/[method:testEmptyString()] (4 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.5.2
+
+</body>
+</html>

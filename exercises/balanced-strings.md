@@ -26,3 +26,115 @@ Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to compl
 
 ## Answer
 
+### Question 1 
+
+#### Partitionnement de l'espace d'entrée:
+#### ensemble initial d'entrée: 
+{"", "a", "(", "abc", "()[]{}", "([)", "([{}])", "[(])", "Object:{id:1, arg:[(1,2), (2,3)]}"} 
+
+#### Les caractéristiques:
+
+- Longueur de la chaîne :
+    - Chaîne vide ou null.
+    - Chaînes avec un seul caractère.
+    - Chaînes de plusieurs caractères.
+- Contenu de la chaîne :
+    - Chaînes ne contenant aucun symbole {}, [], ().
+    - Chaînes contenant uniquement des symboles équilibrés.
+    - Chaînes contenant des symboles déséquilibrés.
+    - Chaînes contenant des symboles bien imbriqués.
+    - Chaine contenant des symboles mal imbriqués 
+    - Chaînes avec des caractères mixtes (symboles + autre caractères).
+
+#### Premier tests à partir de l'ensemble initial d'entrée
+
+```java
+ @Test
+    public void testEmptyString() {
+        String emptyString = "";
+        assertTrue(StringUtils.isBalanced(emptyString));
+    }
+
+    @Test
+    public void testNullString() {
+        String nullString = null;
+        assertTrue(StringUtils.isBalanced(nullString));
+    }
+
+    @Test
+    public void testOneLetter() {
+        String emptyString = "a";
+        assertTrue(StringUtils.isBalanced(emptyString));
+    }
+
+    @Test
+    public void testFailSimpleBracket() {
+        String testString = "(";
+        assertFalse(StringUtils.isBalanced(testString));
+    }
+
+    @Test
+    public void testMultipleLetters() {
+        String emptyString = "abc";
+        assertTrue(StringUtils.isBalanced(emptyString));
+    }
+
+    @Test
+    public void testMultipleBracket() {
+        String testString = "()[]{}";
+        assertTrue(StringUtils.isBalanced(testString));
+    }
+
+    @Test
+    public void testFailBadMiddleOpenBracket() {
+        String testString = "([)";
+        assertFalse(StringUtils.isBalanced(testString));
+    }
+
+    @Test
+    public void testSimpleMultipleImbrication() {
+        String testString = "([{}])";
+        assertTrue(StringUtils.isBalanced(testString));
+    }
+
+    @Test
+    public void testFailsimpleBadImbrication() {
+        String testString = "[(])";
+        assertFalse(StringUtils.isBalanced(testString));
+    }
+
+    @Test
+    public void testComplexeBrackets() {
+        String testString = "Object:{id:1, arg:[(1,2), (2,3)]}";
+        assertTrue(StringUtils.isBalanced(testString));
+    }
+```
+**Taux de couverture** : 94%
+
+**Test supplémentaire** : 
+```java
+ @Test
+    public void testFailCloseSimpleBracket() {
+        String testString = ")";
+        assertFalse(StringUtils.isBalanced(testString));
+    }
+```
+**Taux de couverture** : 100%
+
+#### Predicat a plus de deux opérateurs booléens
+```java
+
+if (!symbolsFound.isEmpty() && 
+    indexSymbol % 2 == 1 &&
+    symbols.charAt(indexSymbol - 1) != symbolsFound.charAt(symbolsFound.length()-1))
+```
+Les tests effectués satisfont déjà la couverture total.
+
+#### PIT : 
+
+**Statistics**
+
+- Generated 25 mutations Killed 25 (100%)
+- Ran 37 tests (1.48 tests per mutation)
+
+=> pas de nouveau test ajouté.
