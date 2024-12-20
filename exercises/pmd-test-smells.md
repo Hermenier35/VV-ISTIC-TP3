@@ -59,3 +59,5 @@ Include the improved test code in this file.
         assertEquals("Last Item", list.get(1), "Last Item is 'Last Item'");
     }
 ```
+La différence avec la correction, c'est que nous pouvons savoir directement quel élément donne une erreur si il y en a une.
+C'est pour celà qu'il est conseillé d'avoir uniquement un assert par methode de test.
